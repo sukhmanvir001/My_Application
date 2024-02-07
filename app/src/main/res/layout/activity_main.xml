@@ -10,73 +10,81 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
         android:text="ExpenseWise"
-        android:textSize="24sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextExpense"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
-        android:hint="Enter expense or amount"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/buttonAddExpense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#46C348"
         android:text="Add Expense"
-        app:layout_constraintBottom_toTopOf="@+id/textViewTotal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextExpense" />
+        tools:layout_editor_absoluteY="399dp" />
 
     <Button
         android:id="@+id/buttonViewTransactions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#3037BA"
         android:text="View Transactions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="341dp" />
+        tools:layout_editor_absoluteY="509dp" />
 
     <TextView
         android:id="@+id/textViewTotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total Amount: $0"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonViewTransactions"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAddBalance"
-        app:layout_constraintVertical_bias="0.354" />
+        android:layout_width="241dp"
+        android:layout_height="36dp"
+        android:fontFamily="serif"
+        android:text="Total Amount: $2000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="290dp" />
 
     <Button
         android:id="@+id/buttonAddBalance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:backgroundTint="#EF6E6E"
         android:text="Add Balance"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toEndOf="@+id/buttonAddExpense"
-        app:layout_constraintTop_toBottomOf="@+id/editTextExpense" />
+        tools:layout_editor_absoluteY="399dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="286dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Your Today's Spending: $473"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="78dp"
+        android:layout_height="71dp"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="88dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="192dp"
+        android:layout_height="94dp"
+        android:text="Welcome, Sukhmanvir"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="76dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
