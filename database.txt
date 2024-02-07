@@ -1,0 +1,12 @@
+ExpenseID: Each expense gets a unique ID number.
+Date: Records the date of the expense.
+Amount: How much money was spent.
+Description: A brief note about the expense.
+Category: Groups expenses into types (like food, transportation).
+
+Expense Collection:
+- ExpenseID (String)
+- Date (Date/Time)
+- Amount (Decimal)
+- Description (String)
+- Category (String)
